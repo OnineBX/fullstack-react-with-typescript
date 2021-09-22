@@ -26,8 +26,29 @@ VSCode支持开箱即用TypeScript，推荐用作开发工具。
 
 需要对React有一定的了解，特别是功能组件和React钩子的有关知识。因为在本例中，我们将不用类组件实现。如有需要，请访问[React Documentation](https://reactjs.org/docs/getting-started.html)以更新知识。
 
-###我们要创建什么
+### 我们要创建什么
 
 我们将创建一个简化的看板类应用。选用该类应用中较为流行的Trello作为参考。
-![MacDown Screenshot](./imgs/trello-board.jpg)
+![trello-board](./imgs/trello-board.jpg)
+
 <center>**Trello Board**</center>
+
+用户可使用Trello创建任务卡片，通过列表进行组织管理。拖拽操作用于实现卡片和列表重排序。我们还可以对任务进行评论和添加文件。
+我们将重建核心功能：创建任务，制作列表和任意拖拽。
+
+### 预览最终结果
+下面我们将从零开始构建应用，并在构建过程中对每一个环节进行解释。请时刻留意我们的进度，这有助于我们随时检验结果。
+
+本书附带一个zip格式的压缩包，里面包含了每一步的示例。完整的示例则在code/01-first-app/completed目录下。
+
+cd code/01-first-app/completed
+
+切换到该目录后，使用下面的命令安装依赖并启动应用：
+
+yarn && yarn dev
+
+应用应该会在浏览器中打开，如果没有，可以手动访问http://localhost:3000.
+
+![final-result](./imgs/final-result.jpg)
+
+<center>**Final Result**</center>
